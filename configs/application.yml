@@ -1,0 +1,21 @@
+server:
+  max-http-request-header-size: 16KB
+  forward-headers-strategy: native
+
+management:
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%X{traceId}] [%X{spanId}] [%thread] %-5level %logger{36} - %msg%n"
+
+# springdoc:
+#   api-docs:
+#     path: /v3/api-docs
