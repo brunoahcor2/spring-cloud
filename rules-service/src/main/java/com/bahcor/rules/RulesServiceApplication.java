@@ -1,4 +1,4 @@
-package com.bahcor.rules_service;
+package com.bahcor.rules;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.bahcor.rules_service;
+package com.bahcor.rules;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
