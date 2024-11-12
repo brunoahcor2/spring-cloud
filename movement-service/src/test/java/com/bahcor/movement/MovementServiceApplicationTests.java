@@ -1,4 +1,4 @@
-package com.bahcor.movement_service;
+package com.bahcor.movement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

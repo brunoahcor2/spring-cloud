@@ -1,4 +1,4 @@
-package com.bahcor.movement_service;
+package com.bahcor.movement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,0 +1,23 @@
+#spring:
+##  config:
+##    import: "configserver:http://localhost:8888"
+#  profiles:
+#    active: default
+#  application:
+#    name: movement-service
+#  cloud:
+#    config:
+#      enabled: false
+#      import-check:
+#        enabled: false
+#      uri: http://localhost:8888
+
+spring:
+  config:
+    import: configserver:http://localhost:8888
+  application:
+    name: movement-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
