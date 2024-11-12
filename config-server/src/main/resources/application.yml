@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/brunoahcor2/spring-cloud
+          search-paths: configs
+          default-label: main
+
+management:
+ tracing:
+   enabled: true
+   sampling:
+     probability: 1.0
+ endpoints:
+   web:
+     exposure:
+       include: "refresh,health,metrics,prometheus"
+
+# logging:
+#   pattern:
+#     console: "%d{yyyy-MM-dd HH:mm:ss} [%X{traceId}] [%X{spanId}] [%thread] %-5level %logger{36} - %msg%n"
+
