@@ -9,13 +9,13 @@ spring:
           predicates:
             - Path=/movement-service/**
           filters:
-            - RewritePath=/movement-service/(?<segment>.*), /$\\{segment}
+            - StripPrefix=1
         - id: rules-service
           uri: lb://rules-service
           predicates:
             - Path=/rules-service/**
           filters:
-            - RewritePath=/rules-service/(?<segment>.*), /$\\{segment}
+            - StripPrefix=1
 
 eureka:
   client:
