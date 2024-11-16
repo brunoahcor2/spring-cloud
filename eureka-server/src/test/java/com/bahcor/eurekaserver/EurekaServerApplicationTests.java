@@ -1,4 +1,4 @@
-package com.bahcor.eureka_server;
+package com.bahcor.eurekaserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
