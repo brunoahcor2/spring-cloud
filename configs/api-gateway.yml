@@ -7,13 +7,13 @@ spring:
         - id: movement-service
           uri: lb://movement-service
           predicates:
-            - Path=/movement/**
+            - Path=/movement-service/**
           filters:
             - StripPrefix=1
         - id: rules-service
           uri: lb://rules-service
           predicates:
-            - Path=/rules/**
+            - Path=/rules-service/**
           filters:
             - StripPrefix=1
 
